@@ -1,0 +1,242 @@
+.chewy-regular {
+    font-family: "Chewy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+body {
+    background-color: #F9FFF1;
+}
+
+.ctj-header {
+    margin-bottom: 70px;
+}
+
+.ctj-header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.ctj-footer p {
+    text-align: center;
+}
+
+.ctj-footer p a {
+    color: #458352;
+}
+
+.to-and-from {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: right;
+}
+
+.to-and-from p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.building-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px;
+}
+
+.building {
+    max-width: 900px;
+    min-height: 100vh;
+}
+
+.chimney-rim,
+.chimney,
+.roof-rim,
+.roof,
+.building-body {
+    border: 1px solid #458352;
+}
+
+.chimney-rim {
+    height: 33px;
+    width: 75px;
+    margin-left: 5px;
+}
+
+.chimney {
+    border-top: none;
+    border-bottom: none;
+    height: 100px;
+    width: 75px;
+    margin-left: 5px;
+}
+
+.roof-rim {
+    height: 21px;
+    width: 764px;
+}
+
+.roof {
+    border-top: none;
+    border-bottom: none;
+    height: 37px;
+    width: 749px;
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+}
+
+.building-body {
+    height: 1660px;
+    width: 749px;
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-panes {
+    height: 1516px;
+    width: 502px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: "pane15 pane15 pane3" 
+    "pane9 pane6 pane20" 
+    "pane9 pane19 pane20" 
+    "pane24 pane23 pane23"
+    "pane5 pane17 pane7"
+    "pane5 pane17 pane10"
+    "pane12 pane8 pane13"
+    "pane12 pane21 pane13"
+    "pane14 pane14 pane1"
+    "pane4 pane11 pane11"
+    "pane18 pane2 pane16"
+    "pane18 pane2 pane22";
+    align-items: end;
+}
+
+.pane {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: fit-content;
+}
+
+.pane img.hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.pane:hover img.hover {
+    opacity: 1;
+}
+
+.pane:hover img.default {
+    opacity: 0;
+}
+
+.pane.pane-1 {
+    grid-area: pane1;
+}
+
+.pane.pane-2 {
+    grid-area: pane2;
+}
+
+.pane.pane-3 {
+    grid-area: pane3;
+}
+
+.pane.pane-4 {
+    grid-area: pane4;
+}
+
+.pane.pane-5 {
+    grid-area: pane5;
+}
+
+.pane.pane-6 {
+    grid-area: pane6;
+}
+
+.pane.pane-7 {
+    grid-area: pane7;
+}
+
+.pane.pane-8 {
+    grid-area: pane8;
+}
+
+.pane.pane-9 {
+    grid-area: pane9;
+}
+
+.pane.pane-10 {
+    grid-area: pane10;
+}
+
+.pane.pane-11 {
+    grid-area: pane11;
+    align-self: center;
+}
+
+.pane.pane-12 {
+    grid-area: pane12;
+}
+
+.pane.pane-13 {
+    grid-area: pane13;
+}
+
+.pane.pane-14 {
+    grid-area: pane14;
+}
+
+.pane.pane-15 {
+    grid-area: pane15;
+}
+
+.pane.pane-16 {
+    grid-area: pane16;
+}
+
+.pane.pane-17 {
+    grid-area: pane17;
+}
+
+.pane.pane-18 {
+    grid-area: pane18;
+}
+
+.pane.pane-19 {
+    grid-area: pane19;
+}
+
+.pane.pane-20 {
+    grid-area: pane20;
+}
+
+.pane.pane-21 {
+    grid-area: pane21;
+}
+
+.pane.pane-22 {
+    grid-area: pane22;
+}
+
+.pane.pane-23 {
+    grid-area: pane23;
+    align-self: center;
+}
+
+.pane.pane-24 {
+    grid-area: pane24;
+}
